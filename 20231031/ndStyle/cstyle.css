@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+}
+
+#head {
+    text-align: center;
+}
+
+#head h6 {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#main {
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+
+#main td {
+    border: 1px solid black;
+    vertical-align: top;
+    
+
+}
+
+.men {
+   text-align: center;
+   font-size: small;
+}
+
+.men td {
+    border: none !important;
+    padding: 5px;
+}
+
+.men td :nth-child(1) {
+    color: red;
+}
+
+table {
+    width: 350px;
+   
+}
+
+
