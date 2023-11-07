@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS stili7 hierarchija</title>
+    <style>
+        h1 {
+            color: red;
+        }
+        /* CSS stilius priskiriamas pagal selektoriaus poziciją, t.y. viršų ims paskutinis įrašas */
+        .blue {
+            color: blue!important;
+            /* !important uždeda žymą, kad nurodyta savybė yra svarbiausia */
+        }
+        .purple {
+            color: purple;
+        }
+        h1.purple {
+            color: purple;
+        }
+
+        #tomato {
+            color: tomato;
+        }
+
+        h1#tomato {
+            color: black;
+        }
+        /* pats unikaliausias variantas CSS hierarchijoje yra inline atributio stilius */
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste exercitationem minus tenetur est iure possimus!</h1>
+    <h1 class="blue">Lorem ipsum dolor sit amet.</h1>
+    <h1 class="blue purple" id="tomato" style="color: yellow!important;">Lorem ipsum dolor sit amet.</h1>
+    <div class="blue purple">Lorem ipsum dolor sit amet.</div>
+</body>
+</html>
