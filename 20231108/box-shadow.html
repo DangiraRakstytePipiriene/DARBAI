@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            margin: 50px auto;
+            
+        }
+        .outer-shadow {
+            background-color: brown;
+            /* pirmas skaičius rodo poziciją iš kairės */
+            /* antras skaičius rodo poziciją iš viršaus */
+            /* trečias skaičius rodo šešėlio išplėtimą spread */
+            /* ketvirtas skaičius rodo šešėlio išskaidymą blur */
+            /* penktoji reikšmė yra spalva */
+            box-shadow: 40px 40px 80px 30px black;
+        }
+        .inner-shadow {
+            background-color: aqua;
+            box-shadow: inset 40px 40px 80px 30px rgb(167, 124, 124); ;
+        }
+    </style>
+</head>
+<body>
+    <div class="box outer-shadow"></div> 
+    <div class="box inner-shadow"></div> 
+</body>
+</html>
