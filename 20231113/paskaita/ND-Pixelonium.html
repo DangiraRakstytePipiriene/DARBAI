@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixelonium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+         * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #d09b9b;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            padding: 0 15px;
+        }
+
+        .left {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+
+        .right {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+         }
+
+         .right-main {
+            height: 40%;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+         }
+
+        .right-title {
+            width: 100%;
+            display: flex;
+            color: #1F2937;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: bold;
+            justify-content: right;
+            align-items: center;
+        }
+
+        .right-title1[type="text"] {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #6B7280;
+            font-size: 16px;
+            font-weight: 600;
+           
+            justify-content: right;
+            align-items: center;
+        }
+        
+
+        .right-title1[type="email"] {
+            color: #6D58BA;
+            font-size: 14px;
+            background: #F5F2FF;
+            border-radius: 4px;
+          }
+
+          .button {
+            
+            background: #724DFF;
+            color: white;
+            text-align: center;
+            padding: 12px 0;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+          }
+
+          /* .box {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            border-radius: 6px;
+            border: 1px solid color #E5E7EB
+            display: flex;
+            padding: 12px;
+            align-items: center;
+            gap: 12px;
+            align-self: stretch;
+          }
+          
+
+          .box img {
+            display: block;
+          } */
+    </style>
+</head>
+<body>
+  <div class="left">
+<img src="left.svg"><alt=""></alt>
+  </div> 
+  <div class="right">
+    <div class="right-main">
+        <div class="right-title">
+        <h1>Sign in to Pixelonium</h1>   
+        </div>
+    <form>
+        <div class="right-title1">
+            <div class="text">Sign in as           
+            <input class="email" placeholder="i@moghadam.pro">   
+            </div>
+        </div>
+        <div>
+            <div class="box">
+            <input type="Password" placeholder= "Password">
+            <input type="icon">
+            <img src="lock-closed.svg" alt="">
+            <input type="icon">
+            <img src="eye.svg" alt="">
+            </div>
+        </div>
+    </form>
+        <div>
+            <p>
+                Forget password? <a href="">Click here</a>
+            </p>
+        </div>
+        <div class="icon">
+            <img src="Arrow left.svg" alt="">
+            <div class="button">Confirm</button>
+        </div>
+        <div>
+            <p>Questions? Email us at <a href="">support@pixelonium.com</a></p>
+        </div>
+        </div>
+    </div>
+        
+      
+    </div>
+       
+    
+
+
+    
+</body>
+</html>

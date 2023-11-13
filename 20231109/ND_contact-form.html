@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kopija Contact form</title>
+    <title>Contact form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
@@ -64,7 +64,7 @@
         }
         
         .contact-inner {
-            height: 550px;
+           
             display: flex;
             position: relative;
             z-index: 1;
@@ -72,12 +72,16 @@
 
         .left {
             width: 50%;
-            height: 100%;
+           
         }
         .right {
             width: 638px;
-            height: 819px;
-            background: url(paskaita/IMAGES/map.png), lightgray 50% / cover no-repeat;
+            background-image: url(paskaita/IMAGES/map.png), lightgray 50% / cover no-repeat;
+                       
+        }
+
+        .map {
+            width: 100%;
             position: absolute;
         }
 
@@ -108,12 +112,11 @@
         }
 
         .table-upload {
-            display: flex;
+            margin-top: 10px;
             width: 548px;
             padding-top: 10px;
             padding: 40px 16px;
-            align-items: center;
-            justify-content: center;
+            text-align: center;
             border: 1px dashed;
             font-family: 'Inter', sans-serif;
             font-size: 14px;
@@ -271,6 +274,7 @@
             </div>
 
             <div class="right"> 
+            <div class="map"><img src="paskaita/IMAGES/map.png" alt=""></div>
                 <div class="adress-box">
                     <p class="adress-box-title"><strong>Headquarters</strong></p>
                     <p class="adress-box-title"><strong>Company s. r. o.</strong></p>
