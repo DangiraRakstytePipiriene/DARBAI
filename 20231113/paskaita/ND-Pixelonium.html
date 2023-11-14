@@ -13,70 +13,105 @@
             margin: 0;
             box-sizing: border-box;
         }
-        body {
+        /* body {
             background-color: #d09b9b;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 14px;
-            padding: 0 15px;
-        }
+            width: 100%;
+            height: 100%;
+       } */
+
+       .container {
+            width: 100%;
+            height: 100%;
+       }
 
         .left {
-            width: 40%;
-            height: 100%;
             display: flex;
-            align-items: center;
-            justify-content: left;
+            width: 500px;
+            height: 768px;
+            background-image: url(left.svg) no-repeat center center;
         }
 
         .right {
-            width: 60%;
-            height: 100%;
+            width: 863px;
+            height: 768px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            
          }
 
          .right-main {
-            height: 40%;
-            width: 90%;
+            height: 331px;
+            width: 287px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
          }
-
+         /* tekstas turėtų būti kiek daugiau nei pusę pločio */
         .right-title {
-            width: 100%;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            width: 331px;
+            height: 25px;
+            letter-spacing: 0px;
+            
+        }
+        .h {
             display: flex;
             color: #1F2937;
             font-size: 18px;
             font-style: normal;
             font-weight: bold;
-            justify-content: right;
-            align-items: center;
+            justify-content: left;
+            align-items: center;   
         }
 
-        .right-title1[type="text"] {
-            width: 100%;
-            border: none;
-            border-bottom: 1px solid #6B7280;
+        .forms,
+        .forms1,
+        .forms2,
+        .forms3,
+        .forms4 {
+            display: flex;
+            margin-top: 30px;
+            width: 331px;
+        }
+
+        .forms[type="text"] {
             font-size: 16px;
             font-weight: 600;
-           
-            justify-content: right;
+            justify-content: left;
             align-items: center;
         }
-        
-
-        .right-title1[type="email"] {
-            color: #6D58BA;
+        /* tekstas turi būti spalvotas */
+        input {
+            width: 77px;
+            color:#6D58BA;
             font-size: 14px;
-            background: #F5F2FF;
+            line-height: 20px;
+            background-color: #F5F2FF;
             border-radius: 4px;
+            border: none;
+         }
+     /* fonas turi būti baltas, ikonos turi būti laukelyje */
+         input[type="Password"] {     
+            display: flex;
+            width: 310px;
+            height: 46px;
+            color:white;
+            font-size: 14px;
+            line-height: 20px;
+            border-radius: 4px;
+            border: 1px solid #6B7280;
           }
-
-          .button {
-            
+          
+          button {
+            width: 300px;
+            height: 46px;
             background: #724DFF;
             color: white;
             text-align: center;
@@ -85,72 +120,41 @@
             border: none;
             border-radius: 6px;
           }
-
-          /* .box {
-            display: flex;
-            gap: 15px;
-            align-items: center;
-            border-radius: 6px;
-            border: 1px solid color #E5E7EB
-            display: flex;
-            padding: 12px;
-            align-items: center;
-            gap: 12px;
-            align-self: stretch;
-          }
-          
-
-          .box img {
-            display: block;
-          } */
     </style>
 </head>
 <body>
-  <div class="left">
-<img src="left.svg"><alt=""></alt>
-  </div> 
-  <div class="right">
-    <div class="right-main">
-        <div class="right-title">
-        <h1>Sign in to Pixelonium</h1>   
-        </div>
-    <form>
-        <div class="right-title1">
-            <div class="text">Sign in as           
-            <input class="email" placeholder="i@moghadam.pro">   
+    <div class="container">
+        <div class="left">
+            <img src="left.svg"><alt=""></alt>
+            <div class="right">
+                <div class="right-main">
+                    <div class="right-title">
+                        <h1>Sign in to Pixelonium</h1>   
+                    </div>
+                    <div class="forms">
+                        <div class="text">Sign in as           
+                        <input class="email" placeholder="i@moghadam.pro"/>   
+                        </div>
+                    </div>
+                    <div class="forms1">   
+                        <icon><img src="lock-closed.svg" alt=""></icon>
+                        <input type="Password" placeholder= "Password"/>
+                        <icon><img src="eye.svg" alt="">
+                    </div>
+                    <div class="forms2">
+                        <p>
+                            Forget password? <a href="">Click here</a>
+                        </p>
+                    </div>
+                    <div class="forms3">
+                        <img src="Arrow left.svg" alt="">
+                        <button>Confirm</button>
+                    </div>
+                    <div class="forms4">
+                        <p>Questions? Email us at <a href="">support@pixelonium.com</a></p>
+                    </div>
             </div>
         </div>
-        <div>
-            <div class="box">
-            <input type="Password" placeholder= "Password">
-            <input type="icon">
-            <img src="lock-closed.svg" alt="">
-            <input type="icon">
-            <img src="eye.svg" alt="">
-            </div>
-        </div>
-    </form>
-        <div>
-            <p>
-                Forget password? <a href="">Click here</a>
-            </p>
-        </div>
-        <div class="icon">
-            <img src="Arrow left.svg" alt="">
-            <div class="button">Confirm</button>
-        </div>
-        <div>
-            <p>Questions? Email us at <a href="">support@pixelonium.com</a></p>
-        </div>
-        </div>
     </div>
-        
-      
-    </div>
-       
-    
-
-
-    
 </body>
 </html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sąskaitos šablonas-1</title>
+    <style>
+        #first {
+    font-size: 30px;
+    color: grey;
+}
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    width: 60%;
+    padding-left: 200px;
+}
+
+tr :nth-child(1) {width: 30%;}
+tr :nth-child(2) {width: 9%;}
+tr :nth-child(3) {width: 10%;}
+tr :nth-child(4) {width: 12%;}
+tr :nth-child(5) {width: 39%;}
+
+img {
+    width: 70px;
+    margin-left: 40%;
+    margin-top: 30px;
+ }
+.ins {
+    border-bottom: 1px solid rgb(158, 140, 140);
+    font-weight: bold;
+    color:  rgb(32, 32, 99);
+    font-size: 25px;
+    padding-top: 50px;
+}
+.color {
+    color: rgb(82, 76, 76);}
+.size1 {
+    font-size: 20px;
+    padding-top: 30px;}
+.size {
+    font-size: 20px;}
+#text {
+    border-bottom: 1px solid rgb(158, 140, 140);
+    font-weight: bold;
+    color:  rgb(32, 32, 99);
+    font-size: 25px;
+    text-align: center;
+}
+
+.monitor {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 60px;
+}
+.monitor tr:nth-child(even) {
+    background-color: rgb(241, 239, 241);
+}
+
+.monitor td {
+    border: 1px solid rgb(147, 145, 143);
+    padding-bottom: 5px;
+}
+.monitor th { 
+    background-color: rgb(95, 136, 241);
+    color: white;
+}
+.last {
+    text-align:end;
+    width: 100%;
+}
+.last td {
+    padding-bottom: 10px;
+    border-collapse: collapse;
+}
+
+.border { 
+    border-bottom: 1px solid rgb(158, 140, 140) ;
+}
+#blue {
+    background-color: rgb(173, 209, 236);
+    border-bottom: 2px solid  black;
+}
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td id="first">INVOICE</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><img src="logo.png"></td>
+        </tr>
+        <tr>
+            <td class="color">Your Company name</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="text">2023-06-16</td>
+        </tr>
+        <tr>
+            <td class="color">123 Street Address</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="color">City, State, Zip/Post Code</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="text">20230616</td>
+        </tr>
+        <tr>
+            <td class="color">Phone Number</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="color">Email Address</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    
+        <tr>
+            <td class="ins">BILL TO</td>
+            <td class="ins"></td>
+            <td></td>
+            <td class="ins" colspan="2">SHIP TO</td>
+        </tr>
+        
+        <tr>
+            <td class="size1" >Contact Name</td>
+            <td></td>
+            <td></td>
+            <td class="size1" colspan="2">Name / Dept</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="size">Client Company Name</td>
+            <td></td>
+            <td></td>
+            <td class="size" colspan="2">Client Company Name</td>
+        </tr>
+        <tr>
+            <td class="size">Address</td>
+            <td></td>
+            <td></td>
+            <td class="size">Address</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="size">Phone, Email</td>
+            <td></td>
+            <td></td>
+            <td class="size">Phone</td>
+            <td></td>
+        </tr>
+    </table>
+    <table class="monitor">
+        <thead>
+        <tr>
+            <th colspan="2">DESCRIPTION</th>
+            <th>QTY</th>
+            <th>UNIT PRICE</th>
+            <th>TOTAL</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td colspan="2">Monitorius</td>
+            <td>10</td>
+            <td>100.99</td>
+            <td>1,009.9</td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td></td>
+            <td></td>
+            <td>0.00</td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td></td>
+            <td></td>
+            <td>0.00</td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td></td>
+            <td></td>
+            <td>0.00</td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td></td>
+            <td></td>
+            <td>0.00</td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td></td>
+            <td></td>
+            <td>0.00</td>
+        </tr>
+    </table>
+    <table class="last">
+        <tr>
+            <td></td>
+            <td></td>
+            <td>SUBTOTAL</td>
+            <td class="border">1,009.9</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>DISCOUNT</td>
+            <td class="border">0.00</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><b>BALANCE</b></td>
+            <td id="blue" rowspan="2"><b> &#8364;1,009.9</b></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><b>DUE</b></td>
+
+        </tr>
+    </table>
+    </table>
+
+</body>
+</html>  
